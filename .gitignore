@@ -1,2 +1,4 @@
 chromedriver.exe
 .ipynb_checkpoints
+env/
+setup.py
