@@ -1,4 +1,7 @@
 chromedriver.exe
 .ipynb_checkpoints
-env/
+.venv
 setup.py
+Untitled-1.ipynb
+Soccer_Predictor.egg-info
+soccer_prediction.ipynb
