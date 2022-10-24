@@ -1,5 +1,4 @@
 # ProgettoINFORET
 
 # Matches Predictor
- ### Mohcen Laaroussi
- ### Matteo Rusconi
+ ### Laaroussi Mohcen and Rusconi Matteo

@@ -31,14 +31,14 @@ class MySpider(scrapy.Spider):
             yield scrapy.Request(url=copy.deepcopy(self.url), callback=self.parse_root, cb_kwargs=dict(pag = 1, day = copy.deepcopy(self.day)))
             
             #incrementa giorno
-            self.day = ('0' if (int(self.day) < 10) else '') +  str(int(self.day) + 1)
+            self.day = ('0' if (int(self.day)+1 < 10) else '') +  str(int(self.day) + 1)
             self.url = str(f'https://sport.sky.it/archivio/{self.year}/{self.month}/{self.day}')
-
+            print("DAY: ",self.day, "MONTH: ",self.month, "YEAR",self.year)
             #controlla validità giorno
             try:
                 datetime.datetime(year=int(self.year),month=int(self.month),day=int(self.day))
             except ValueError:
-                self.month =  ('0' if (int(self.month) < 10) else '') + str(int(self.month) + 1)
+                self.month =  ('0' if (int(self.month)+1 < 10) else '') + str(int(self.month) + 1) #010
                 self.day = '01'
                 if (int(self.month) > 12):
                     self.month = '01'
