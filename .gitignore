@@ -2,7 +2,6 @@ chromedriver.exe
 .ipynb_checkpoints
 .venv
 setup.py
-Untitled-1.ipynb
 Soccer_Predictor.egg-info
 soccer_prediction.ipynb
 skysport/formations.csv
